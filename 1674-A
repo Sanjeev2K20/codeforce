@@ -1,0 +1,33 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long int x,y;
+        cin>>x>>y;
+        long long int A=y/x;
+        long long int B=sqrt(A);
+        double C=sqrt(A);
+        
+        if(x>y){
+            cout<<0<<" "<<0<<endl;
+        }
+        else if(x==y){
+            cout<<3<<" "<<1<<endl;
+        }
+        else if(y%x==0){
+            if(B==C){
+                cout<<2<<" "<<B<<endl;
+            }
+            else{
+                cout<<1<<" "<<A<<endl;
+            }
+        }
+        else{
+            cout<<0<<" "<<0<<endl;
+            
+        }
+    }
+}
