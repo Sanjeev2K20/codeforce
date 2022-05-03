@@ -1,0 +1,80 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long double x,y,a,b;
+        cin>>x>>y>>a>>b;
+        long long int A=(y-x)/(a+b);
+        long double AA=(y-x)/(a+b);
+        if(A==AA){
+            cout<<A<<endl;
+        }
+        else{
+            cout<<-1<<endl;
+        }
+    }
+}
+
+
+
+another solution
+
+#include<iostream>
+using namespace std;
+int main(){
+    long long int t;
+    cin>>t;
+    while(t--){
+        long long int x,y,a,b;
+        cin>>x>>y>>a>>b;
+        long long int A=0;
+        bool AA=1;
+        while(x<=y){
+            x+=a;
+            y-=b;
+            A++;
+            if(x==y){
+                AA=0;
+            }
+        }
+        if(AA==1){
+            cout<<-1<<endl;
+        }
+        else{
+            cout<<A-1<<endl;
+        }
+    }
+}
+
+another solution
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long int x,y,a,b;
+        cin>>x>>y>>a>>b;
+        long long int A=0;
+        bool AA=1;
+        for(long long int i=x;i<=y;i++){
+            x+=a;
+            y-=b;
+            A++;
+            if(x==y){
+                AA=0;
+            }
+            if(x>y){
+                break;
+            }
+        }
+        if(AA==1){
+            cout<<-1<<endl;
+        }
+        else{
+            cout<<A-1<<endl;
+        }
+    }
+}
