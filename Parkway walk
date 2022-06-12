@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int x;
+    cin>>x;
+    while(x--){
+        int n,m;
+        cin>>n>>m;
+        int arr[n];
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        int A=0;
+        for(int i=0;i<n;i++){
+            A+=arr[i];
+        }
+        int c=m-A;
+        if(A>=m){
+            cout<<A-m<<endl;
+        }
+        else{
+            cout<<0<<endl;
+        }
+    }
+}
