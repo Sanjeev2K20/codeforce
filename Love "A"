@@ -1,0 +1,23 @@
+question: https://codeforces.com/problemset/problem/1146/A
+code: https://onlinegdb.com/sZEoxHPwN
+
+#include<iostream>
+using namespace std;
+int main(){
+    string s;
+    cin>>s;
+    int n=s.size();
+    int A=0;
+    for(int i=0;i<n;i++){
+        if(s[i]=='a'){
+            A++;
+        }
+    }
+    int m=n-A;
+    if(m>=A- 1){
+        cout<<(A+ (A- 1)); 
+    }
+    else{
+        cout<<A+m;
+    }
+}
