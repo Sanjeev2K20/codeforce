@@ -1,0 +1,24 @@
+Question: https://codeforces.com/contest/1739/problem/A
+code: https://onlinegdb.com/sHdCMWwMJ
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n,m;
+        cin>>n>>m;
+        if(n== 3 || m ==3){
+            if((n==m) || ((n+m) ==5)){
+                cout<<2<<" "<<2<<endl;
+            }
+            else{
+                cout<<n<<" "<<m<<endl;
+            }
+        }
+        else{
+            cout<<n<<" "<<m<<endl;
+        }
+    }
+}
