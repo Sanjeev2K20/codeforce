@@ -1,0 +1,23 @@
+question: https://codeforces.com/problemset/problem/1742/A
+code: https://onlinegdb.com/6LT6BiEfn
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int big=max({a,b,c});
+        int sum=a+b+c;
+        sum=sum-big;
+        if(sum==big){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+}
