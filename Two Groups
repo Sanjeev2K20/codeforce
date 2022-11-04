@@ -1,0 +1,25 @@
+Question: https://codeforces.com/contest/1747/problem/A
+code: https://onlinegdb.com/OwYN0URpy
+#include<iostream>
+using namespace std;
+int main(){
+    long long int t;
+    cin>>t;
+    while(t--){
+        long long int n;
+        cin>>n;
+        long long int arr[n];
+        for(long long int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        long long int sum=0;
+        for(long long int i=0;i<n;i++){
+            sum+=arr[i];
+        }
+        if(sum<0){
+            sum*=-1;
+        }
+        cout<<sum;
+        cout<<endl;
+    }
+}
