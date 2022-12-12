@@ -1,0 +1,20 @@
+Question: https://codeforces.com/contest/1766/problem/A
+code: https://onlinegdb.com/BvShT5kgb
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        string s;
+        cin>>s;
+        int n = s.size();
+        int m = s[0]-'0';
+        int A = (n- 1)*9 + m;
+        cout<<A<<endl;
+        // cout<<m;
+    }
+}
