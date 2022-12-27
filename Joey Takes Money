@@ -1,0 +1,23 @@
+Question: https://codeforces.com/contest/1731/problem/A
+code:
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long int n;
+        cin>>n;
+        long long int arr[n];
+        for(long long int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        long long int A=1;
+        for(long long int i=0;i<n;i++){
+            A*=arr[i];
+        }
+        A+= (n- 1);
+        long long int c = 2022*A;
+        cout<<c<<endl;
+    }
+}
