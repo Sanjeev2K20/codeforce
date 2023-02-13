@@ -1,0 +1,24 @@
+div: 3
+https://codeforces.com/problemset/problem/1077/A
+
+code:
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long int a,b,k;
+        cin>>a>>b>>k;
+        long long int sum=0;
+        if(k%2==0){
+            int A = k/2;
+            sum = A*a - A*b;
+        }
+        else{
+            int A = k/2;
+            sum = (A+ 1)*a - A*b;
+        }
+        cout<<sum<<endl;
+    }
+}
